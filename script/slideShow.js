@@ -26,5 +26,5 @@ function showSlides(num){
 
         slide[slideIndex - 1].style.display = "block"
         dots[slideIndex - 1].className += " active-dot"
-        setTimeout(showSlides, 5000);
+        setTimeout(showSlides, 3000);
 }
