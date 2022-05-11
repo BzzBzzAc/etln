@@ -59,29 +59,38 @@ img {
 .logo {
 }
 .nav-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 15%;
     position: absolute;
     top: 0%;
     left: 80%;
     transform: translate(0, 50%);
     z-index: 9;
+    background: rgba(0, 0, 0, 0.192);
+    backdrop-filter: blur(3px);
+    border-radius: 15px;
 }
+
 .nav-ul {
+    padding: 20%;
 }
 .nav-li{
-    margin-bottom: 30px;
+    margin: .8rem;
 }
 .navigtion, .navigatin-footer {
-font-family: Montserrat;
-font-size: 16px;
-line-height: 24px;
-font-weight: 500;
-text-transform: uppercase;
-letter-spacing: 0.1em;
-color: rgb(76, 112, 40);
+    width: 80%;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgb(0, 0, 0);
 
 /* color: #191919; */
 }
-.active{color: #82872a;}
+.active{color: #6d1212;}
 /* .navigtion:hover{
     color: #82872a;
 } */
@@ -244,4 +253,197 @@ color: rgb(76, 112, 40);
     margin: 2rem;
 }
 .navigatin-footer {
+}
+
+
+
+
+
+/* \\\\\\\\\\\\\\\\\\\\\PHONE////////////////////// */
+
+@media only screen and (max-width: 600px) {
+    body{
+        max-width: 100%;
+    }
+    .wrapper {
+        max-width: 100%;
+    }
+    .content {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .main {
+        width: 100%;
+    }
+    section{
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    .logo-container {
+        top: 0%;
+        left: 0%;
+        z-index: 9;
+    }
+    .logo {
+        max-width: 20%;
+    }
+    .nav-container {
+        display: none;
+        top: 0%;
+        left: 0%;
+        transform: translate(0, 0%);
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.632);
+    }
+    .container-bar{
+        width: 10%;
+        height: 15%;
+        position: absolute;
+        top: 3%;
+        left: 85%;
+        transform: translate(0, 0);
+        z-index: 11;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 100%;
+        height: 5%;
+        background-color: rgb(114, 113, 113);
+        margin-top: 15%;
+        margin-bottom: 15%;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        /* -webkit-transform: rotate(-45deg) translate(-9px, 6px) ; */
+        transform: rotate(-45deg) translate(-4px, 5px) ;
+    }
+    .change .bar3 {
+        /* -webkit-transform: rotate(45deg) translate(-8px, -8px) ; */
+        transform: rotate(45deg) translate(-0px, -2px) ;
+    }
+    .change .bar2{
+        display: none;
+    }
+
+    .open-bar .container-bar{
+        display: block;
+    }
+
+    .nav-ul {
+        padding: 20%;
+    }
+    .nav-li {
+        margin: .8rem;
+    }
+    .navigtion {
+        width: 80%;
+        font-family: Montserrat;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: rgb(255, 255, 255);
+
+    }
+    .active {
+    }
+
+    .block-container-mob{
+        display: flex;
+        flex-direction: column;
+        max-width: 99%;
+        margin-top: -10px;
+    }
+
+    .dots-container {
+        position: absolute;
+        top: -9999px;
+    }
+    .dot {
+    }
+    .slidershow-container{
+        width: 100%;
+    }
+    .mySlide{
+        width: 100%;
+    }
+    .slider-img{
+        width: 100%;
+    }
+    .sect-two {
+        background-color: #fff;
+    }
+    .container-info {
+    }
+    .row-container {
+        margin-bottom: 10px;
+    }
+    .three-inline {
+        margin: -1%;
+        margin-bottom: 2%;
+    }
+    .info-block-txt {
+    }
+    .title-info {
+    }
+    .info-text {
+    }
+    .two-inline {
+    }
+    .small {
+        width: 100%;
+        text-align: center;
+    }
+    .about-container {
+        text-align: center;
+        padding-right: 0px;
+    }
+    .title-about {
+    }
+    .line {
+        width: 70%;
+        margin: 0 auto;
+        height:1rem;
+        border-bottom: #82872a 2px solid;
+        border-left: none;
+    }
+    .big {
+        width: 100%;
+        font-family: 'Nunito Sans';
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.005em;
+        /* color: #fff; */
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+    .about-text-container {
+        min-width: 100%;
+        padding-left: 1rem;
+    }
+    .about-text {
+    }
+    .map-container {
+    }
+    .footer {
+        max-width: 100%;
+    }
+    .logo-footer-container {
+        height: 100%;
+    }
+    .navi-container-footer {
+    }
+    .nav-footer {
+        display: none;
+    }
+    .ul-footer {
+    }
+    .li-footer {
+    }
+    .navigatin-footer {
+        
+    }
 }
